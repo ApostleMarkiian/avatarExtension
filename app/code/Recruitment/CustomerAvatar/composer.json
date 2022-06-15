@@ -1,0 +1,15 @@
+{
+    "name": "recruitment/module-customeravatar",
+    "description": "This module realizes opportunity customers to upload images of there profile",
+    "type": "magento2-module",
+    "license": "OSL-3.0",
+    "minimum-stability": "dev",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Recruitment\\CustomerAvatar\\": ""
+        }
+    }
+}
