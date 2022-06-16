@@ -145,7 +145,7 @@ class Avatar extends Template
      */
     public function getDefaultCustomerAvatarImageUrl($customerData = null): string
     {
-        $customerName = $customerData->getName();
+        $customerName = $customerData ? $customerData->getName() : '';
 
         if (!$customerData){
             $customerData = $this->customer->load($this->sessionFactory->getId());
